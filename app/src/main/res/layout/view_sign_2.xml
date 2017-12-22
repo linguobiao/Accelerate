@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="10dp"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/height_item_small"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:background="@mipmap/bg_item_stride">
+
+        <TextView
+            style="@style/text_item_left_sign"
+            android:text="@string/sign_Stride"/>
+        
+        <ImageView
+            android:id="@+id/img_line_stride"
+            style="@style/image_item_line_v" />
+
+        <EditText
+            android:id="@+id/edit_stride"
+            style="@style/edit_item_sign"
+            android:inputType="numberDecimal"
+            android:layout_toRightOf="@id/img_line_stride"/>
+        
+        <TextView
+            style="@style/text_item_right_sign"
+            android:text="@string/settings_inch" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/height_item_small"
+        android:layout_marginTop="@dimen/marginTop_item"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:background="@mipmap/bg_item_height">
+
+        <TextView
+            style="@style/text_item_left_sign"
+            android:text="@string/sign_Height"/>
+
+        <ImageView
+            android:id="@+id/img_line_height_ft"
+            style="@style/image_item_line_v" />
+
+        <RelativeLayout
+            android:id="@+id/ly_height_ft_in"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:layout_toRightOf="@id/img_line_height_ft">
+
+            <ImageView
+                android:id="@+id/img_line_height_in"
+                style="@style/image_item_line_v" />
+
+            <EditText
+                android:id="@+id/edit_height_ft"
+                style="@style/edit_item_sign"/>
+
+            <TextView
+                style="@style/text_item_right_sign"
+                android:layout_toLeftOf="@id/img_line_height_in"
+                android:layout_alignParentRight="false"
+                android:text="@string/settings_ft" />
+
+            <EditText
+                android:id="@+id/edit_height_in"
+                android:layout_toRightOf="@id/img_line_height_in"
+                style="@style/edit_item_sign"/>
+
+            <TextView
+                style="@style/text_item_right_sign"
+                android:text="@string/settings_in" />
+
+        </RelativeLayout>
+
+        <EditText
+            android:id="@+id/edit_height_cm"
+            style="@style/edit_item_sign"
+            android:inputType="numberDecimal"
+            android:layout_toRightOf="@id/img_line_height_ft"
+            android:visibility="gone"/>
+
+        <TextView
+            style="@style/text_item_right_sign"
+            android:text="@string/settings_cm"
+            android:visibility="gone" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/height_item_small"
+        android:layout_marginTop="@dimen/marginTop_item"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:background="@mipmap/bg_item_weight">
+
+        <TextView
+            style="@style/text_item_left_sign"
+            android:text="@string/sign_Weight"/>
+
+        <ImageView
+            android:id="@+id/img_line_weight"
+            style="@style/image_item_line_v" />
+
+        <EditText
+            android:id="@+id/edit_weight"
+            style="@style/edit_item_sign"
+            android:inputType="numberDecimal"
+            android:layout_toRightOf="@id/img_line_weight"/>
+
+        <TextView
+            style="@style/text_item_right_sign"
+            android:text="@string/settings_lbs" />
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/txt_sign"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/height_item_small"
+        android:layout_marginTop="@dimen/marginTop_item"
+        android:gravity="center"
+        android:background="@color/yellow"
+        android:textColor="@color/white"
+        android:textSize="30dp"
+        android:text="@string/welcome_SIGN_UP"
+        />
+
+    <TextView
+        android:id="@+id/txt_tip"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:text="@string/sign_tip"/>
+
+</LinearLayout>

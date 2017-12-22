@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:id="@+id/ly_title"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/main_height_title"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:background="@color/black">
+
+        <TextView
+            android:id="@+id/txt_back"
+            style="@style/text_title_left"
+            android:drawableLeft="@mipmap/btn_back"/>
+
+        <TextView
+            style="@style/text_title_middle"
+            android:drawableTop="@mipmap/image_title_goals"
+            android:text="@string/goals_DAILY_GOAL"/>
+
+        <TextView
+            android:id="@+id/txt_done"
+            style="@style/text_title_right"
+            android:text="@string/goals_Start"/>
+
+    </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@id/ly_title"
+            android:layout_marginBottom="@dimen/main_height_title"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:id="@+id/ly_daily"
+                style="@style/layout_item"
+                android:background="@mipmap/bg_item_steps_add">
+
+
+                    <EditText
+                        android:id="@+id/edit_steps"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="50dp"
+                        android:layout_centerVertical="true"
+                        android:textColor="@color/white"
+                        android:textSize="24dp"
+                        android:textStyle="bold"
+                        android:hint="0"
+                        android:inputType="number"
+                        android:textColorHint="@color/hint"
+                        android:background="@null"
+                        android:textCursorDrawable="@drawable/draw_cursor"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="80dp"
+                        android:textColor="@color/white"
+                        android:textSize="14dp"
+                        android:text="@string/public_steps"/>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1">
+
+                <TextView
+                    android:id="@+id/txt_tip1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:textColor="@color/click"
+                    android:textSize="18dp"
+                    android:textStyle="bold"
+                    android:text="@string/goals_tip_1"
+                    android:layout_centerInParent="true"
+                    android:gravity="center_horizontal"
+                    android:drawablePadding="20dp"
+                    android:drawableTop="@mipmap/image_logo_title"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/txt_tip1"
+                    android:textColor="@color/click"
+                    android:textSize="12dp"
+                    android:layout_marginTop="10dp"
+                    android:text="@string/goals_tip_2"
+                    android:layout_centerInParent="true"/>
+
+            </RelativeLayout>
+
+
+
+        </LinearLayout>
+
+</RelativeLayout>

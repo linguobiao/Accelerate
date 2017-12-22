@@ -1,0 +1,24 @@
+<resources>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+
+    <dimen name="main_height_title">60dp</dimen>
+    <dimen name="main_textSize_radio">9dp</dimen>
+    <dimen name="main_textSize_title_middle">18dp</dimen>
+    <dimen name="main_textSize_title_right">15dp</dimen>
+    <dimen name="textSize_item_sign">20dp</dimen>
+    <dimen name="textSize_item_unit">14dp</dimen>
+    <dimen name="textSize_item_sign_right">15dp</dimen>
+
+    <dimen name="height_item">80dp</dimen>
+    <dimen name="height_item_small">50dp</dimen>
+    <dimen name="height_item_small_2">100dp</dimen>
+
+    <dimen name="marginLeft_item">30dp</dimen>
+    <dimen name="marginRight_item">30dp</dimen>
+    <dimen name="marginTop_item">15dp</dimen>
+    <dimen name="marginTop_item_unit">8dp</dimen>
+
+    <dimen name="padding_radio">2dp</dimen>
+</resources>

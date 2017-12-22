@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="10dp"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/height_item_small"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:background="@mipmap/bg_item_gender">
+
+        <EditText
+            android:id="@+id/edit_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:textColor="@color/white"
+            android:textSize="@dimen/textSize_item_sign"
+            android:hint="@string/sign_name"
+            android:textColorHint="@color/hint"
+            android:layout_marginLeft="@dimen/marginLeft_item"
+            android:inputType="text"
+            android:background="@null"
+            android:textCursorDrawable="@drawable/draw_cursor"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/height_item_small"
+        android:layout_marginTop="@dimen/marginTop_item"
+        android:background="@mipmap/bg_item_gender">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/marginLeft_item"
+            android:textColor="@color/white"
+            android:textSize="@dimen/textSize_item_sign"
+            android:text="@string/sign_Gender"/>
+
+        <RadioGroup
+            android:layout_width="@dimen/height_item_small_2"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:layout_alignParentRight="true">
+
+            <RadioButton
+                android:id="@+id/radio_m"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:button="@null"
+                android:background="@drawable/selector_gender"
+                android:textColor="@color/white"
+                android:textSize="20dp"
+                android:gravity="center"
+                android:text="@string/sign_M"/>
+
+            <RadioButton
+                android:id="@+id/radio_f"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:button="@null"
+                android:gravity="center"
+                android:background="@drawable/selector_gender"
+                android:textColor="@color/white"
+                android:textSize="20dp"
+                android:text="@string/sign_F"/>
+        </RadioGroup>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/height_item_small"
+        android:layout_marginTop="@dimen/marginTop_item"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:background="@mipmap/bg_item_mail">
+
+        <EditText
+            android:id="@+id/edit_email"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:textColor="@color/white"
+            android:textSize="@dimen/textSize_item_sign"
+            android:textColorHint="@color/hint"
+            android:layout_marginLeft="@dimen/marginLeft_item"
+            android:background="@null"
+            android:inputType="textEmailAddress"
+            android:hint="@string/sign_email"
+            android:textCursorDrawable="@drawable/draw_cursor"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/height_item_small"
+        android:layout_marginTop="@dimen/marginTop_item"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:background="@mipmap/bg_item_password">
+
+        <EditText
+            android:id="@+id/edit_password"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:textColor="@color/white"
+            android:textSize="@dimen/textSize_item_sign"
+            android:textColorHint="@color/hint"
+            android:layout_marginLeft="@dimen/marginLeft_item"
+            android:background="@null"
+            android:inputType="textPassword"
+            android:hint="@string/sign_password"
+            android:textCursorDrawable="@drawable/draw_cursor"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/height_item_small"
+        android:layout_marginTop="@dimen/marginTop_item"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:background="@mipmap/bg_item_password">
+
+        <EditText
+            android:id="@+id/edit_password_confirm"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:textColor="@color/white"
+            android:textSize="@dimen/textSize_item_sign"
+            android:textColorHint="@color/hint"
+            android:layout_marginLeft="@dimen/marginLeft_item"
+            android:background="@null"
+            android:inputType="textPassword"
+            android:hint="@string/sign_reconfirm_password"
+            android:textCursorDrawable="@drawable/draw_cursor"/>
+
+    </RelativeLayout>
+
+</LinearLayout>

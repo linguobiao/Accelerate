@@ -1,0 +1,219 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:id="@+id/ly_title"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/main_height_title"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:background="@color/black">
+
+        <TextView
+            android:id="@+id/txt_back"
+            style="@style/text_title_left"
+            android:drawableLeft="@mipmap/btn_back"/>
+
+
+        <TextView
+            style="@style/text_title_middle"
+            android:drawableTop="@mipmap/image_title_dashboard"
+            android:textSize="0dp"/>
+
+    </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@id/ly_title"
+            android:layout_marginBottom="@dimen/main_height_title"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:background="@color/click"
+                android:layout_margin="10dp"
+                android:padding="10dp"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/txt_title"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/white"
+                        android:textSize="22dp"
+                        android:text="@string/dash_STEPS"
+                        android:drawableLeft="@mipmap/image_steps"
+                        android:gravity="center_vertical"
+                        android:drawablePadding="5dp"/>
+
+                    <TextView
+                        android:id="@+id/txt_value"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_toLeftOf="@+id/txt_label"
+                        android:layout_centerVertical="true"
+                        android:textColor="@color/white"
+                        android:textSize="18dp"
+                        android:text="0"/>
+
+                    <TextView
+                        android:id="@+id/txt_label"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:textColor="@color/white"
+                        android:textSize="12dp"
+                        android:text="steps"/>
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/txt_average"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/white"
+                        android:textSize="12dp"
+                        android:text="@string/dash_Weekly_Average"
+                        android:gravity="center_vertical" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:textColor="@color/white"
+                        android:textSize="12dp"
+                        android:text="@string/dash_Today"/>
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <ImageView
+                        android:id="@+id/img_left"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:padding="5dp"
+                        android:src="@mipmap/btn_back"
+                        android:visibility="invisible"/>
+
+                    <TextView
+                        android:id="@+id/txt_month"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:textColor="@color/white"
+                        android:textSize="14dp"
+                        android:text="month"
+                        android:visibility="invisible"/>
+
+                    <ImageView
+                        android:id="@+id/img_right"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginRight="20dp"
+                        android:padding="5dp"
+                        android:src="@mipmap/image_arrow_right"
+                        android:visibility="invisible"/>
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/ly_chart"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1">
+
+                    <com.lgb.accelerate.view.RectView
+                        android:id="@+id/view_rect"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent" />
+
+                    <com.lgb.accelerate.view.ChartBarView
+                        android:id="@+id/view_chart"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        />
+
+                </RelativeLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <ImageView
+                        android:layout_width="15dp"
+                        android:layout_height="15dp"
+                        android:layout_marginLeft="10dp"
+                        android:background="@color/yellow"/>
+
+                    <TextView
+                        android:id="@+id/txt_label_chart"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:text="@string/dash_Number_Of_Steps"
+                        android:textColor="@color/white"
+                        android:textSize="12dp"
+                        android:layout_gravity="center_vertical"/>
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+
+            <RadioGroup
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginBottom="10dp"
+                android:background="@color/click">
+
+                <RadioButton
+                    android:id="@+id/radio_week"
+                    android:layout_width="50dp"
+                    android:layout_height="40dp"
+                    android:layout_margin="3dp"
+                    android:layout_weight="1"
+                    android:button="@null"
+                    android:background="@drawable/selector_time"
+                    android:textColor="@color/selector_time_txt"
+                    android:textSize="20dp"
+                    android:gravity="center"
+                    android:text="@string/dash_ONE_W"
+                    android:checked="true"/>
+
+                <RadioButton
+                    android:id="@+id/radio_month"
+                    android:layout_width="50dp"
+                    android:layout_height="40dp"
+                    android:layout_margin="3dp"
+                    android:layout_weight="1"
+                    android:button="@null"
+                    android:gravity="center"
+                    android:background="@drawable/selector_time"
+                    android:textColor="@color/selector_time_txt"
+                    android:textSize="20dp"
+                    android:text="@string/dash_ONE_M"/>
+            </RadioGroup>
+
+        </LinearLayout>
+
+</RelativeLayout>

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:id="@+id/ly_title"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/main_height_title"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:background="@color/black">
+
+        <TextView
+            style="@style/text_title_middle"
+            android:drawableTop="@mipmap/image_title_friends"
+            android:text="@string/friends_FRIENDS_STEPS"/>
+
+    </RelativeLayout>
+
+    <ListView
+        android:id="@+id/lv_friends"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/ly_title"
+        android:layout_marginBottom="@dimen/main_height_title">
+
+    </ListView>
+</RelativeLayout>

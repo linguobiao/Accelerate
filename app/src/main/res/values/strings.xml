@@ -1,0 +1,179 @@
+<resources>
+    <string name="app_name">Fitmaker</string>
+    <string name="facebook_app_id_test">279138929277475</string>
+    <string name="facebook_app_id">279138929277475</string>
+
+    <string name="main_DASHBOARD">DASHBOARD</string>
+    <string name="main_TRACKS">TRACKS</string>
+    <string name="main_GOALS">GOALS</string>
+    <string name="main_FRIENDS">FRIENDS</string>
+    <string name="main_SETTINGS">SETTINGS</string>
+    
+    <string name="login_Next">Next</string>
+    <string name="login_facebook_tip">Do you approve to get your friends from your Facebook account?</string>
+    <string name="login_APPROVE">APPROVE</string>
+    <string name="login_DECLINE">DECLINE</string>
+
+    <string name="dash_TODAY">TODAY</string>
+    <string name="dash_STEPS">STEPS</string>
+    <string name="dash_CALORIES">CALORIES</string>
+    <string name="dash_DISTANCE">DISTANCE</string>
+    <string name="dash_Weekly_Average">Weekly Average</string>
+    <string name="dash_Today">Today</string>
+    <string name="dash_Number_Of_Steps">Number Of Steps</string>
+    <string name="dash_Total_distance">Total distance</string>
+    <string name="dash_Total_calories">Total calories</string>
+    <string name="dash_THIS_WEEK">THIS WEEK</string>
+    <string name="dash_ONE_W">1W</string>
+    <string name="dash_ONE_M">1M</string>
+
+    <string name="tracks_EDIT_LOG">EDIT LOG</string>
+    <string name="tracks_Done">Done</string>
+    <string name="tracks_LAST_TRACK">LAST TRACK</string>
+    <string name="tracks_ADD_TRACK">ADD TRACK</string>
+    <string name="tracks_Not_valid_steps">Not valid steps</string>
+
+    <string name="goals_title">STAY IN GOOD SHAPE</string>
+    <string name="goals_DAILY_GOAL">DAILY GOAL</string>
+    <string name="goals_WEEKLY_GOAL">WEEKLY GOAL</string>
+    <string name="goals_tip_daily">set a target daily step goal</string>
+    <string name="goals_tip_weekly">take as many steps in during the week</string>
+    <string name="goals_one_day">1 day</string>
+    <string name="goals_seven_day">7 day</string>
+    <string name="goals_Start">Start</string>
+    <string name="goals_P_Y_T_L">PUSH YOURSELF BEYOND YOUR LIMITS TO ACCOMPLISH YOUR GOALS!</string>
+    <string name="goals_tip_1">PUSH YOURSELF TO LIMIT</string>
+    <string name="goals_tip_2">Set your target and be committed</string>
+    <string name="goals_S_y_t_a_b_c">Set your target and be committed</string>
+
+    <string name="friends_FRIENDS_STEPS">FRIEND\'S STEPS</string>
+
+    <string name="settings_UNIT">UNIT</string>
+    <string name="settings_FAQ">FAQ</string>
+    <string name="settings_RESET">RESET</string>
+    <string name="settings_LOG_OUT">LOG OUT</string>
+    <string name="settings_DISTANCE">DISTANCE</string>
+    <string name="settings_HEIGHT">HEIGHT</string>
+    <string name="settings_WEIGHT">WEIGHT</string>
+    <string name="settings_STRIDE">STRIDE</string>
+    <string name="settings_miles">miles</string>
+    <string name="settings_km">km</string>
+    <string name="settings_ft_in">ft/in</string>
+    <string name="settings_ft">ft</string>
+    <string name="settings_in">in</string>
+    <string name="settings_cm">cm</string>
+    <string name="settings_lbs">lbs</string>
+    <string name="settings_kg">kg</string>
+    <string name="settings_inch">inch</string>
+    <string name="settings_m">m</string>
+    <string name="settings_Joined_on">Joined on</string>
+    <string name="settings_EDIT_PROFILE">EDIT PROFILE</string>
+    <string name="settings_Updated">Settings Updated</string>
+    <string name="settings_R_Y_A">Reset your account</string>
+    <string name="settings_tip_reset">Are you confirm to reset your account?</string>
+
+    <string name="welcome_Exceed_Expectation">Exceed Expectation</string>
+    <string name="welcome_tip1">View your stats, compete against yourself!\nTrack your goals and your progress, increase\nyour activity levels!</string>
+    <string name="welcome_LOG_IN">LOG IN</string>
+    <string name="welcome_SIGN_UP">SIGN UP</string>
+
+    <string name="sign_PROFILE">PROFILE</string>
+    <string name="sign_name">name</string>
+    <string name="sign_Gender">Gender</string>
+    <string name="sign_email">email</string>
+    <string name="sign_password">password</string>
+    <string name="sign_reconfirm_password">reconfirm password</string>
+    <string name="sign_Stride">Stride</string>
+    <string name="sign_Height">Height</string>
+    <string name="sign_Weight">Weight</string>
+    <string name="sign_tip">By tapping \'Sign Up\' above, you are agreeing to the Terms &amp; Conditions and Privacy Policy</string>
+    <string name="sign_M">M</string>
+    <string name="sign_F">F</string>
+    <string name="sign_N_c_b_e">Name cannot be empty</string>
+    <string name="sign_P_d_n_m">Password dose not match</string>
+    <string name="sign_S_c_b_z">Stride cannot be zero</string>
+    <string name="sign_P_e_f">Please enter feet</string>
+    <string name="sign_W_c_b_z">Weight cannot be zero</string>
+    <string name="sign_U_a_e">User already exists</string>
+    <string name="sign_Failure">Sign up Failure</string>
+
+    <string name="login_F_G_P_W">FORGET THE PASSWORD?</string>
+    <string name="login_F_T_P_W">FORGOT THE PASSWORD</string>
+    <string name="login_Request_denied">Request denied</string>
+    <string name="login_P_c_y_e">Please check your email</string>
+    <string name="login_T_u_y_e">Tell us your email</string>
+    <string name="login_SUBMIT">SUBMIT</string>
+    <string name="login_E_c_b_e">Email cannot be empty</string>
+    <string name="login_P_e_a_v_e_a">Please enter a valid email address</string>
+    <string name="login_P_c_b_e">Password cannot be empty</string>
+    <string name="login_Failure">Login Failure</string>
+
+
+    <string name="link_text_manual">
+        <b>text2:</b>
+        This is some other text, with a
+        <a href="http://www.google.com">link</a>
+        specified via an tag.  Use a \"tel:\" URL to <a href="tel:4155551212">dial a phone number</a>.
+</string>
+
+
+    <string name="public_steps">steps</string>
+    <string name="public_miles">miles</string>
+    <string name="public_calories_burned">calories burned</string>
+    <string name="public_loading">Loading…</string>
+    <string name="public_Failure">Failure</string>
+    <string name="public_YES">YES</string>
+    <string name="public_NO">NO</string>
+    <string name="public_No_network">No network</string>
+
+    <array name="week1">
+        <item>S</item>
+        <item>M</item>
+        <item>T</item>
+        <item>W</item>
+        <item>T</item>
+        <item>F</item>
+        <item>S</item>
+    </array>
+    <array name="week2">
+        <item>Sun</item>
+        <item>Mon</item>
+        <item>Tue</item>
+        <item>Wed</item>
+        <item>Thu</item>
+        <item>Fri</item>
+        <item>Sat</item>
+    </array>
+
+    <array name="month">
+        <item>JANUARY</item>
+        <item>FEBRUARY</item>
+        <item>MARCH</item>
+        <item>APRIL</item>
+        <item>MAY</item>
+        <item>JUNE</item>
+        <item>JULY</item>
+        <item>AUGUST</item>
+        <item>SEPTEMBER</item>
+        <item>OCTOBER</item>
+        <item>NOVEMBER</item>
+        <item>DECEMBER</item>
+    </array>
+
+    <array name="month2">
+        <item>January</item>
+        <item>February</item>
+        <item>March</item>
+        <item>April</item>
+        <item>May</item>
+        <item>June</item>
+        <item>July</item>
+        <item>August</item>
+        <item>September</item>
+        <item>October</item>
+        <item>November</item>
+        <item>December</item>
+    </array>
+
+
+</resources>

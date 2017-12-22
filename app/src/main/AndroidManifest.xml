@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.lgb.accelerate">
+
+    <uses-permission android:name="android.permission.INTERNET"></uses-permission>
+    <!-- 用于访问wifi网络信息，wifi信息会用于进行网络定位 -->
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" >
+    </uses-permission>
+    <!-- 获取运营商信息，用于支持提供运营商信息相关的接口 -->
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" >
+    </uses-permission>
+    <!-- 这个权限用于获取wifi的获取权限，wifi信息会用来进行网络定位 -->
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" >
+    </uses-permission>
+    <!-- 必选 -->
+    <uses-permission android:name="android.permission.READ_PHONE_STATE"></uses-permission>
+
+    <application
+        android:name=".Global.App"
+        android:allowBackup="true"
+        android:icon="@mipmap/image_app_logo"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".splash.SplashActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".main.MainActivity"
+            android:windowSoftInputMode="adjustPan" >
+
+        </activity>
+        <activity android:name=".splash.WelcomeActivity"
+            android:launchMode="singleTask">
+
+        </activity>
+        <activity android:name=".splash.SignActivity">
+
+        </activity>
+        <activity android:name=".splash.LoginActivity">
+
+        </activity>
+        <activity android:name=".splash.ForgetActivity">
+
+        </activity>
+        <activity android:name=".splash.PocilyActivity">
+
+        </activity>
+        <activity android:name=".main.settings.FaqActivity">
+
+        </activity>
+
+        <activity android:name=".splash.FacebookActivity"></activity>
+        
+        <activity android:name="com.facebook.FacebookActivity"
+            android:configChanges=
+                "keyboard|keyboardHidden|screenLayout|screenSize|orientation"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar"
+            android:label="@string/app_name"
+            tools:replace="android:theme"/>
+
+        <meta-data android:name="com.facebook.sdk.ApplicationId" android:value="@string/facebook_app_id">
+            
+        </meta-data>
+        <!--<meta-data android:value="40d86d4b6a33c4d3b53c77c6f1fdd445" android:name="BUG_HD_SDK_GENERAL_KEY" />-->
+    </application>
+
+</manifest>

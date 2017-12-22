@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:id="@+id/ly_title"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/main_height_title"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:background="@color/black">
+
+        <TextView
+            android:id="@+id/txt_back"
+            style="@style/text_title_left"
+            android:drawableLeft="@mipmap/btn_back"/>
+
+        <TextView
+            style="@style/text_title_middle"
+            android:drawableTop="@mipmap/image_title_settings"
+            android:text="@string/main_SETTINGS"/>
+
+        <TextView
+            android:id="@+id/txt_done"
+            style="@style/text_title_right"
+            android:text="@string/tracks_Done"/>
+
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/ly_title"
+        android:layout_marginBottom="@dimen/main_height_title">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                style="@style/text_item_title"
+                android:text="@string/settings_DISTANCE"/>
+            
+            <RelativeLayout
+                android:id="@+id/ly_miles"
+                style="@style/layout_item_unit">
+
+                <TextView
+                    style="@style/text_item_unit"
+                    android:text="@string/settings_miles"/>
+
+                <ImageView
+                    android:id="@+id/img_miles"
+                    style="@style/image_item_select" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/ly_km"
+                style="@style/layout_item_unit">
+
+                <TextView
+                    style="@style/text_item_unit"
+                    android:text="@string/settings_km"/>
+
+                <ImageView
+                    android:id="@+id/img_km"
+                    style="@style/image_item_select" />
+            </RelativeLayout>
+
+            <TextView
+                style="@style/text_item_title"
+                android:text="@string/settings_HEIGHT"/>
+
+            <RelativeLayout
+                android:id="@+id/ly_ft_in"
+                style="@style/layout_item_unit">
+
+                <TextView
+                    style="@style/text_item_unit"
+                    android:text="@string/settings_ft_in"/>
+
+                <ImageView
+                    android:id="@+id/img_ft_in"
+                    style="@style/image_item_select" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/ly_cm"
+                style="@style/layout_item_unit">
+
+                <TextView
+                    style="@style/text_item_unit"
+                    android:text="@string/settings_cm"/>
+
+                <ImageView
+                    android:id="@+id/img_cm"
+                    style="@style/image_item_select" />
+            </RelativeLayout>
+
+            <TextView
+                style="@style/text_item_title"
+                android:text="@string/settings_WEIGHT"/>
+
+            <RelativeLayout
+                android:id="@+id/ly_lbs"
+                style="@style/layout_item_unit">
+
+                <TextView
+                    style="@style/text_item_unit"
+                    android:text="@string/settings_lbs"/>
+
+                <ImageView
+                    android:id="@+id/img_lbs"
+                    style="@style/image_item_select" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/ly_kg"
+                style="@style/layout_item_unit">
+
+                <TextView
+                    style="@style/text_item_unit"
+                    android:text="@string/settings_kg"/>
+
+                <ImageView
+                    android:id="@+id/img_kg"
+                    style="@style/image_item_select" />
+            </RelativeLayout>
+
+            <TextView
+                style="@style/text_item_title"
+                android:text="@string/settings_STRIDE"/>
+
+            <RelativeLayout
+                android:id="@+id/ly_inch"
+                style="@style/layout_item_unit">
+
+                <TextView
+                    style="@style/text_item_unit"
+                    android:text="@string/settings_inch"/>
+
+                <ImageView
+                    android:id="@+id/img_inch"
+                    style="@style/image_item_select" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/ly_m"
+                android:layout_marginBottom="10dp"
+                style="@style/layout_item_unit">
+
+                <TextView
+                    style="@style/text_item_unit"
+                    android:text="@string/settings_m"/>
+
+                <ImageView
+                    android:id="@+id/img_m"
+                    style="@style/image_item_select" />
+            </RelativeLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+</RelativeLayout>

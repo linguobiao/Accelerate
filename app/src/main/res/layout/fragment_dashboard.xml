@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:id="@+id/ly_title"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/main_height_title"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:background="@color/black">
+
+        <TextView
+            style="@style/text_title_middle"
+            android:drawableTop="@mipmap/image_title_dashboard"
+            android:text="@string/dash_TODAY"/>
+
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/ly_title"
+        android:layout_marginBottom="@dimen/main_height_title">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/ly_steps"
+                style="@style/layout_item"
+                android:background="@color/click">
+
+                <ImageView
+                    style="@style/image_item_track"
+                    android:src="@mipmap/image_item_steps"/>
+
+                <TextView
+                    android:id="@+id/txt_steps"
+                    style="@style/text_item_left_track"
+                    android:layout_weight="1"
+                    android:text="0" />
+
+                <TextView
+                    style="@style/text_item_right"
+                    android:layout_weight="1"
+                    android:text="@string/public_steps"/>
+
+                <ImageView
+                    style="@style/image_item_arrow_goto"/>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ly_distance"
+                style="@style/layout_item"
+                android:background="@color/click">
+
+                <ImageView
+                    style="@style/image_item_track"
+                    android:src="@mipmap/image_item_distance"/>
+
+                <TextView
+                    android:id="@+id/txt_distance"
+                    style="@style/text_item_left_track"
+                    android:layout_weight="1"
+                    android:text="0.0"/>
+
+                <TextView
+                    android:id="@+id/txt_unit_distance"
+                    style="@style/text_item_right"
+                    android:layout_weight="1"
+                    android:text="@string/public_miles"/>
+
+                <ImageView
+                    style="@style/image_item_arrow_goto"/>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ly_burn"
+                style="@style/layout_item"
+                android:background="@color/click">
+
+                <ImageView
+                    style="@style/image_item_track"
+                    android:src="@mipmap/image_item_burn"/>
+
+                <TextView
+                    android:id="@+id/txt_calories"
+                    style="@style/text_item_left_track"
+                    android:layout_weight="1"
+                    android:text="0.0"/>
+
+                <TextView
+                    style="@style/text_item_right"
+                    android:layout_weight="1"
+                    android:text="@string/public_calories_burned"/>
+
+                <ImageView
+                    style="@style/image_item_arrow_goto"/>
+
+            </LinearLayout>
+        </LinearLayout>
+
+    </ScrollView>
+</RelativeLayout>
