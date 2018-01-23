@@ -109,7 +109,7 @@
                         android:layout_height="wrap_content"
                         android:layout_marginLeft="20dp"
                         android:padding="5dp"
-                        android:src="@mipmap/btn_back"
+                        android:src="@mipmap/image_arrow_back"
                         android:visibility="invisible"/>
 
                     <TextView
@@ -160,7 +160,7 @@
                         android:layout_width="15dp"
                         android:layout_height="15dp"
                         android:layout_marginLeft="10dp"
-                        android:background="@color/yellow"/>
+                        android:background="@color/white"/>
 
                     <TextView
                         android:id="@+id/txt_label_chart"

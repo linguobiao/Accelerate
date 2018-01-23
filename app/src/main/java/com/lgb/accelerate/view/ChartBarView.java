@@ -117,16 +117,16 @@ public class ChartBarView extends DemoView {
 			chart.getDataAxis().hideAxisLine();
 			chart.getDataAxis().hideTickMarks();
 			chart.getDataAxis().setTickLabelMargin(DensityUtil.dip2px(getContext(), 20));
-			chart.getDataAxis().getTickLabelPaint().setColor(Color.WHITE);
+			chart.getDataAxis().getTickLabelPaint().setColor(Color.BLACK);
 
 			// X轴
 			chart.setCategoryAxisLocation(XEnum.AxisLocation.TOP);
-			chart.getCategoryAxis().getAxisPaint().setColor(Color.WHITE);
+			chart.getCategoryAxis().getAxisPaint().setColor(Color.BLACK);
 			chart.getCategoryAxis().hideTickMarks();
 			chart.getCategoryAxis().getTickMarksPaint().setAlpha(0);
 			chart.getCategoryAxis().setTickLabelMargin(DensityUtil.dip2px(getContext(), -10));
 			chart.getCategoryAxis().getTickLabelPaint().setTextSize(DensityUtil.dip2px(getContext(), 8));
-			chart.getCategoryAxis().getTickLabelPaint().setColor(Color.WHITE);
+			chart.getCategoryAxis().getTickLabelPaint().setColor(Color.BLACK);
 
 			// 定义数据轴标签显示格式
 			chart.getDataAxis().setLabelFormatter(new IFormatterTextCallBack() {
@@ -153,7 +153,7 @@ public class ChartBarView extends DemoView {
 			});
 
 			// 定义柱形上标签显示颜色
-			chart.getBar().getItemLabelPaint().setColor(Color.rgb(77, 184, 73));
+			chart.getBar().getItemLabelPaint().setColor(Color.BLACK);
 			chart.getBar().getItemLabelPaint().setTypeface(Typeface.DEFAULT_BOLD);
 
 			chart.setBarCenterStyle(XEnum.BarCenterStyle.TICKMARKS);
@@ -209,7 +209,7 @@ public class ChartBarView extends DemoView {
 
 		chartDesireLines((_max) / 2d);
 		chart.getDataAxis().setAxisMax(_max);
-		BarDataSet.add(new BarData("", dataSeries, getResources().getColor(R.color.yellow)));
+		BarDataSet.add(new BarData("", dataSeries, Color.BLACK));
 		chart.getDataAxis().setAxisSteps((_max) / 2d);
 	}
 
@@ -243,9 +243,9 @@ public class ChartBarView extends DemoView {
 	 */
 	private void chartDesireLines(double middle)
 	{
-		CustomLineData s = new CustomLineData("",0d,Color.WHITE,DensityUtil.dip2px(getContext(), 2));
+		CustomLineData s = new CustomLineData("",0d,Color.BLACK,DensityUtil.dip2px(getContext(), 2));
 		mCustomLineDataset.add(s);
-		mCustomLineDataset.add(new CustomLineData("",middle,Color.WHITE,DensityUtil.dip2px(getContext(), 2)));
+		mCustomLineDataset.add(new CustomLineData("",middle,Color.BLACK,DensityUtil.dip2px(getContext(), 2)));
 
 	}
 

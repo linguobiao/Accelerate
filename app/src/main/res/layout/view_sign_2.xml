@@ -129,8 +129,8 @@
         android:layout_height="@dimen/height_item_small"
         android:layout_marginTop="@dimen/marginTop_item"
         android:gravity="center"
-        android:background="@color/yellow"
-        android:textColor="@color/white"
+        android:background="@color/white"
+        android:textColor="@color/color_ffffff"
         android:textSize="30dp"
         android:text="@string/welcome_SIGN_UP"
         />

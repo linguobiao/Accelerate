@@ -38,7 +38,7 @@
                 android:paddingRight="@dimen/padding_radio"
                 android:saveEnabled="false"
                 android:text="@string/main_DASHBOARD"
-                android:textColor="@color/white"
+                android:textColor="@color/color_ffffff"
                 android:textSize="@dimen/main_textSize_radio" />
 
             <RadioButton
@@ -53,7 +53,7 @@
                 android:paddingRight="@dimen/padding_radio"
                 android:saveEnabled="false"
                 android:text="@string/main_TRACKS"
-                android:textColor="@color/white"
+                android:textColor="@color/color_ffffff"
                 android:textSize="@dimen/main_textSize_radio" />
 
             <RadioButton
@@ -68,7 +68,7 @@
                 android:paddingRight="@dimen/padding_radio"
                 android:saveEnabled="false"
                 android:text="@string/main_GOALS"
-                android:textColor="@color/white"
+                android:textColor="@color/color_ffffff"
                 android:textSize="@dimen/main_textSize_radio" />
 
             <RadioButton
@@ -83,7 +83,7 @@
                 android:paddingRight="@dimen/padding_radio"
                 android:saveEnabled="false"
                 android:text="@string/main_FRIENDS"
-                android:textColor="@color/white"
+                android:textColor="@color/color_ffffff"
                 android:textSize="@dimen/main_textSize_radio" />
 
             <RadioButton
@@ -98,7 +98,7 @@
                 android:paddingRight="@dimen/padding_radio"
                 android:saveEnabled="false"
                 android:text="@string/main_SETTINGS"
-                android:textColor="@color/white"
+                android:textColor="@color/color_ffffff"
                 android:textSize="@dimen/main_textSize_radio" />
         </RadioGroup>
 

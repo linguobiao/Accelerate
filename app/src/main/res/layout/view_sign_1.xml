@@ -56,7 +56,7 @@
                 android:layout_weight="1"
                 android:button="@null"
                 android:background="@drawable/selector_gender"
-                android:textColor="@color/white"
+                android:textColor="@color/selector_000000_ffffff"
                 android:textSize="20dp"
                 android:gravity="center"
                 android:text="@string/sign_M"/>
@@ -69,7 +69,7 @@
                 android:button="@null"
                 android:gravity="center"
                 android:background="@drawable/selector_gender"
-                android:textColor="@color/white"
+                android:textColor="@color/selector_000000_ffffff"
                 android:textSize="20dp"
                 android:text="@string/sign_F"/>
         </RadioGroup>

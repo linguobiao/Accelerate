@@ -37,15 +37,16 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="vertical">
+            android:orientation="vertical"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp">
 
             <TextView
                 android:id="@+id/txt_name"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginLeft="20dp"
                 android:layout_marginTop="20dp"
-                android:textColor="@color/click"
+                android:textColor="@color/white"
                 android:textSize="25dp"
                 android:text="@string/sign_name"
                 />
@@ -55,8 +56,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="2dp"
-                android:layout_marginLeft="20dp"
-                android:textColor="@color/yellow"
+                android:textColor="#787878"
                 android:textSize="15dp"
                 android:text="@string/settings_Joined_on"/>
 
@@ -110,7 +110,7 @@
                         android:layout_weight="1"
                         android:button="@null"
                         android:background="@drawable/selector_gender"
-                        android:textColor="@color/white"
+                        android:textColor="@color/selector_000000_ffffff"
                         android:textSize="20dp"
                         android:gravity="center"
                         android:text="@string/sign_M"/>
@@ -123,7 +123,7 @@
                         android:button="@null"
                         android:gravity="center"
                         android:background="@drawable/selector_gender"
-                        android:textColor="@color/white"
+                        android:textColor="@color/selector_000000_ffffff"
                         android:textSize="20dp"
                         android:text="@string/sign_F"/>
                 </RadioGroup>

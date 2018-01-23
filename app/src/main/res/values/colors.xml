@@ -4,10 +4,11 @@
     <color name="colorPrimaryDark">#303F9F</color>
     <color name="colorAccent">#FF4081</color>
 
-    <color name="white">#FFFFFF</color>
+    <color name="white">#000000</color>
     <color name="black">#000000</color>
+    <color name="color_ffffff">#ffffff</color>
 
-    <color name="click">#D64F37</color>
+    <color name="click">#fce934</color>
     <color name="yellow">#C59920</color>
-    <color name="hint">#99FFFFFF</color>
+    <color name="hint">#999999</color>
 </resources>

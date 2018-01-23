@@ -92,7 +92,10 @@ public class DataListViewAdapter extends BaseAdapter {
                 holder.txt_label.setText(context.getString(R.string.public_calories_burned));
             }
             if (i == Data.getWeek() - 1) {
-                holder.ly_item.setBackgroundColor(context.getResources().getColor(R.color.yellow));
+                holder.ly_item.setBackgroundColor(context.getResources().getColor(R.color.white));
+                holder.txt_value.setTextColor(context.getResources().getColor(R.color.color_ffffff));
+                holder.txt_week.setTextColor(context.getResources().getColor(R.color.color_ffffff));
+                holder.txt_label.setTextColor(context.getResources().getColor(R.color.color_ffffff));
             } else {
                 holder.ly_item.setBackgroundColor(context.getResources().getColor(R.color.click));
 

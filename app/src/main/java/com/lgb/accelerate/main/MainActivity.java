@@ -35,7 +35,7 @@ public class MainActivity extends Activity implements CompoundButton.OnCheckedCh
                     FragmentUtils.getInstance().showMainFragment(DashboardFragment.class, FragmentUtils.FRAGMENT_DASHBOARD);
                     radio_dash.setTextColor(getResources().getColor(R.color.click));
                 } else {
-                    radio_dash.setTextColor(getResources().getColor(R.color.white));
+                    radio_dash.setTextColor(getResources().getColor(R.color.color_ffffff));
                     FragmentUtils.getInstance().removeSonFragment(DashboardFragment.class, FragmentUtils.FRAGMENT_DASHBOARD);
                 }
                 break;
@@ -44,7 +44,7 @@ public class MainActivity extends Activity implements CompoundButton.OnCheckedCh
                     FragmentUtils.getInstance().showMainFragment(TracksFragment.class, FragmentUtils.FRAGMENT_TRACKS);
                     radio_tracks.setTextColor(getResources().getColor(R.color.click));
                 } else {
-                    radio_tracks.setTextColor(getResources().getColor(R.color.white));
+                    radio_tracks.setTextColor(getResources().getColor(R.color.color_ffffff));
                     FragmentUtils.getInstance().removeSonFragment(TracksFragment.class, FragmentUtils.FRAGMENT_TRACKS);
                 }
                 break;
@@ -53,7 +53,7 @@ public class MainActivity extends Activity implements CompoundButton.OnCheckedCh
                     FragmentUtils.getInstance().showMainFragment(GoalsFragment.class, FragmentUtils.FRAGMENT_GOALS);
                     radio_goals.setTextColor(getResources().getColor(R.color.click));
                 } else {
-                    radio_goals.setTextColor(getResources().getColor(R.color.white));
+                    radio_goals.setTextColor(getResources().getColor(R.color.color_ffffff));
                     FragmentUtils.getInstance().removeSonFragment(GoalsFragment.class, FragmentUtils.FRAGMENT_GOALS);
                 }
                 break;
@@ -62,7 +62,7 @@ public class MainActivity extends Activity implements CompoundButton.OnCheckedCh
                     FragmentUtils.getInstance().showMainFragment(FriendsFragment.class, FragmentUtils.FRAGMENT_FRIENDS);
                     radio_friends.setTextColor(getResources().getColor(R.color.click));
                 } else {
-                    radio_friends.setTextColor(getResources().getColor(R.color.white));
+                    radio_friends.setTextColor(getResources().getColor(R.color.color_ffffff));
                     FragmentUtils.getInstance().removeSonFragment(FriendsFragment.class, FragmentUtils.FRAGMENT_FRIENDS);
                 }
                 break;
@@ -71,7 +71,7 @@ public class MainActivity extends Activity implements CompoundButton.OnCheckedCh
                     FragmentUtils.getInstance().showMainFragment(SettingsFragment.class, FragmentUtils.FRAGMENT_SETTINGS);
                     radio_settings.setTextColor(getResources().getColor(R.color.click));
                 } else {
-                    radio_settings.setTextColor(getResources().getColor(R.color.white));
+                    radio_settings.setTextColor(getResources().getColor(R.color.color_ffffff));
                     FragmentUtils.getInstance().removeSonFragment(SettingsFragment.class, FragmentUtils.FRAGMENT_SETTINGS);
                 }
                 break;
