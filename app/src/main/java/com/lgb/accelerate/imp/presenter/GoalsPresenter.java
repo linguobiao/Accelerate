@@ -82,25 +82,13 @@ public class GoalsPresenter implements BasePresenterApi {
                         } else {
                             map_result.put(Constant.KEY_GOAL_BOOL, false);
                         }
-                        // 开始获取本周目标完成度
-                        Map<String, Object> map_week = new HashMap<>();
-                        map_week.put(Constant.KEY_ID, SpUtils.getInstance().getInt(Constant.KEY_ID, 0));
-//                        Calendar cal_from = CalendarHelper.getDateOfSunday();;
-//                        Calendar cal_to = Calendar.getInstance();
-//                        map_week.put(Constant.KEY_FROM_DATE, FormatHelper.sdf_yyyy_MM_dd.format(cal_from.getTime()));
-//                        map_week.put(Constant.KEY_TO_DATE, FormatHelper.sdf_yyyy_MM_dd.format(cal_to.getTime()));
-                        model.postGoalWeekly(map_week, handler);
                     }
                     // 失败
                     else {
-                        // 获取失败，可能没有上传过目标，将目标设置为0
-                        int goal = 0;
-                        if (steps >= goal) {
-                            map_result.put(Constant.KEY_GOAL_BOOL, true);
-                        } else {
-                            map_result.put(Constant.KEY_GOAL_BOOL, false);
-                        }
+                        // 获取失败，可能没有上传过目标
+                        map_result.put(Constant.KEY_GOAL_BOOL, false);
                     }
+                    getWeeklyGoals();//获取本周目标完成度
                     break;
                 // 获取本周目标完成度返回
                 case Constant.HANDLER_GET_GAOL_BOOL_RESULT:
@@ -122,6 +110,17 @@ public class GoalsPresenter implements BasePresenterApi {
             }
         }
     };
+
+    private void getWeeklyGoals() {
+        // 开始获取本周目标完成度
+        Map<String, Object> map_week = new HashMap<>();
+        map_week.put(Constant.KEY_ID, SpUtils.getInstance().getInt(Constant.KEY_ID, 0));
+//                        Calendar cal_from = CalendarHelper.getDateOfSunday();;
+//                        Calendar cal_to = Calendar.getInstance();
+//                        map_week.put(Constant.KEY_FROM_DATE, FormatHelper.sdf_yyyy_MM_dd.format(cal_from.getTime()));
+//                        map_week.put(Constant.KEY_TO_DATE, FormatHelper.sdf_yyyy_MM_dd.format(cal_to.getTime()));
+        model.postGoalWeekly(map_week, handler);
+    }
 
     @Override
     public void post(Map<String, Object> maps) {
