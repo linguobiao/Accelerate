@@ -6,7 +6,7 @@ package com.lgb.accelerate.Global;
 public class Constant {
 
 //    ip:47.88.100.125 端口：9980
-    public static final String URL_BASE = "http://47.88.100.125:9980/ActionTracker";
+    public static final String URL_BASE = "http://47.251.51.48:9980/ActionTracker";
 
     public static final String URL_SIGNUP = URL_BASE + "/front/user/signup.do?";
     public static final String URL_LOGIN = URL_BASE + "/front/user/login.do?";
